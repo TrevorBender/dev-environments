@@ -15,8 +15,8 @@
     devShells = forEachSupportedSystem ({pkgs}: {
       default = pkgs.mkShell {
         packages = with pkgs; [
-          nodejs_22
-          typescript-language-server
+          zig_0_13
+          (zls.override {inherit zig_0_13;})
         ];
       };
     });

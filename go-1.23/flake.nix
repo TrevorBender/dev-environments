@@ -1,7 +1,7 @@
 {
   description = "A Nix-flake-based Go 1.23 development environment";
 
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/4005c3ff7505313cbc21081776ad0ce5dfd7a3ce";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/8be1843237fd7dcc5e5db4814ccf24dafc620ff9";
 
   outputs = {
     self,
