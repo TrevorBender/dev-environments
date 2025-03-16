@@ -75,6 +75,10 @@
           path = ./cmake-ninja;
           description = "cmake dev env";
         };
+        exercism = {
+          path = ./exercism;
+          description = "exercism";
+        };
         gleam = {
           path = ./gleam;
           description = "gleam dev env";
