@@ -91,6 +91,10 @@
           path = ./jupyter;
           description = "jupyter notebooks with python";
         };
+        lua_5_2 = {
+          path = ./lua-5.2;
+          description = "lua dev env";
+        };
         node_22 = {
           path = ./node-22;
           description = "node 22 dev env";
