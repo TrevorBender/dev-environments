@@ -75,6 +75,10 @@
           path = ./cmake-ninja;
           description = "cmake dev env";
         };
+        gleam = {
+          path = ./gleam;
+          description = "gleam dev env";
+        };
         go_1_23 = {
           path = ./go-1.23;
           description = "Go devn env";
