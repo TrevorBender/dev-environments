@@ -16,7 +16,8 @@
       default = pkgs.mkShell {
         packages = with pkgs; [
           zig_0_13
-          (zls.override {inherit zig_0_13;})
+          zls
+          # (zls.override {inherit zig_0_13;})
         ];
       };
     });

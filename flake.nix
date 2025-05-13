@@ -99,6 +99,10 @@
           path = ./node-22;
           description = "node 22 dev env";
         };
+        odin_unstable = {
+          path = ./odin-unstable;
+          description = "odin dev env";
+        };
         zig_1_13 = {
           path = ./zig-1.13;
           description = "zig 1.13 dev env";
