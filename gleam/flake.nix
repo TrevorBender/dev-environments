@@ -1,7 +1,7 @@
 {
   description = "A Nix-flake-based Gleam development environment";
 
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/release-24.11";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/release-25.05";
 
   outputs = {
     self,

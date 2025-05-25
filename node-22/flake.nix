@@ -1,6 +1,6 @@
 {
   description = "dev environment";
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/8be1843237fd7dcc5e5db4814ccf24dafc620ff9";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/release-25.05";
 
   outputs = {nixpkgs, ...}: let
     supportedSustems = ["x86_64-linux"];

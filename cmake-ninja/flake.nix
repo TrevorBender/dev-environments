@@ -1,7 +1,7 @@
 {
   description = "A Nix-flake-based cmake & ninja development environment";
 
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/a45fa362d887f4d4a7157d95c28ca9ce2899b70e";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/release-25.05";
 
   outputs = {
     self,

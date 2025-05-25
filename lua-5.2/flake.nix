@@ -2,7 +2,7 @@
   description = "lua dev env";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/release-24.11";
+    nixpkgs.url = "github:nixos/nixpkgs/release-25.05";
   };
 
   outputs = {
@@ -21,9 +21,15 @@
         pkgs.mkShell
         {
           packages = with pkgs; [
-            lua5_2
+            (lua5_2.withPackages (ps:
+              with ps; [
+                cjson
+                busted
+                tl
+                cyan
+                teal-language-server
+              ]))
             lua-language-server
-            luaPackages.busted
           ];
         };
     });
