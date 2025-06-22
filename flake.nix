@@ -105,6 +105,10 @@
           path = ./odin-unstable;
           description = "odin dev env";
         };
+        rust = {
+          path = ./rust;
+          description = "rust dev env";
+        };
         zig_1_13 = {
           path = ./zig-1.13;
           description = "zig 1.13 dev env";
