@@ -25,6 +25,11 @@
 
     devShells = forEachSupportedSystem ({pkgs}: {
       default = pkgs.mkShell {
+        # Fix for using delve
+        # See <https://nixos.wiki/wiki/Go#Using_cgo_on_NixOS>
+        # Alternatively can set CGO_ENABLE to 0
+        hardeningDisable = ["fortify"];
+
         packages = with pkgs; [
           go
           gotools
