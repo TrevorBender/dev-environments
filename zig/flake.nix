@@ -1,6 +1,6 @@
 {
-  description = "zig 0.14 dev environment";
-  inputs.nixpkgs.url = "github:nixos/nixpkgs/release-25.05";
+  description = "zig dev environment";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
   outputs = {nixpkgs, ...}: let
     supportedSustems = ["x86_64-linux"];
@@ -15,7 +15,7 @@
     devShells = forEachSupportedSystem ({pkgs}: {
       default = pkgs.mkShell {
         packages = with pkgs; [
-          zig_0_14
+          zig
           zls
         ];
       };

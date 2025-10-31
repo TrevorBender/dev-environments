@@ -121,6 +121,10 @@
           path = ./zig-1.14;
           description = "zig 1.14 dev env";
         };
+        zig = {
+          path = ./zig;
+          description = "zig (latest) dev env";
+        };
       };
     };
 }
