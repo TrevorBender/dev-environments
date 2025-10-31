@@ -87,7 +87,11 @@
         };
         go_1_23 = {
           path = ./go-1.23;
-          description = "Go devn env";
+          description = "Go dev env";
+        };
+        java_21 = {
+          path = ./java-21;
+          description = "java dev env";
         };
         jupyter = {
           path = ./jupyter;
